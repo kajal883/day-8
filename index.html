@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kajal portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(14, 12, 40);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(16, 12, 70);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(181, 181, 236);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background-color: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 50px 0;
+        }
+
+        .firstsection>div {
+            width: 36%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .leftsection p {
+            font-size: 1rem;
+            margin-top: 20px;
+            color: #9c97f1;
+        }
+
+        .leftsection .button {
+            padding: 50px 0;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+        }
+
+        .leftsection .btn {
+            padding: 12px 30px;
+            text-decoration: none;
+            background: rgb(27, 23, 85);
+            color: white;
+            /* border: 2px solid white; */
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .leftsection .btn:hover {
+            background: rgb(76, 57, 95);
+        }
+
+        .rightsection img {
+            width: 380px;
+            height: 380px;
+            margin-left: 50px;
+            border-radius: 50%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: 7px solid rgb(27, 23, 85);
+        }
+
+        .purple {
+            color: rgb(152, 113, 189);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(152, 113, 189);
+        }
+
+        .section {
+            background-color: rgb(14, 12, 40);
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .section h2 {
+            margin-top: 100px;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: rgb(223, 216, 216);
+            border-left: 5px solid rgb(152, 113, 189);
+            padding-left: 10px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: #191835;
+            padding: 20px 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            font-weight: 500;
+            transition: transform 0.3s;
+        }
+
+        /* .fa-brands{
+            width: 200px;
+            height: 200px;
+        } */
+
+        .skill:hover {
+            transform: scale(1.05);
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #191835;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background: rgb(23, 23, 23);
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kajal's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hello, I'm <span class="purple">Kajal</span> kumari
+                <div> </div>
+                <span id="element"></span>
+                <p>I'm a B.Tech student specializing in Computer Science & Engineering, learning Web Development and
+                    building Simple, creative websites.
+                </p>
+                <div class="button">
+                    <a href="/Kajal_Kumari_1[1].pdf" download class="btn">Download Resume</a>
+                    <a href="https://github.com/kajal883" target="_blank" class="btn">Visit github</a>
+                </div>
+    
+            </div>
+            <div class="rightsection">
+                <img src="kkajal.jpg" alt="">
+            </div>
+        </section>
+        <hr>
+
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>I’m a passionate learner currently exploring the world of Web Development. I enjoy building
+                responsive, user-friendly websites and love experimenting with creative frontend designs.</p>
+            <br>
+            <p> With a B.Tech background and a strong interest in technology, I’m on an exciting journey to become a
+                skilled full-stack developer.</p>
+            <br>
+            <p> In my free time, I explore coding challenges, watch tech tutorials, and keep up with the latest trends
+                in web development. I believe in continuous learning and enjoy turning ideas into real web experiences.
+            </p>
+        </section>
+
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="https://img.icons8.com/?size=100&id=32896&format=png&color=228BE6" width="40px">
+                    <span>HTML</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/?size=100&id=38272&format=png&color=228BE6" width="40px" />
+                    <span>CSS</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/?size=100&id=Ucu4aXrhAYDI&format=png&color=228BE6" width="40px" />
+                    <span>Bootstrap</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/?size=100&id=39854&format=png&color=228BE6" width="40px" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/?size=100&id=55199&format=png&color=228BE6" width="40px" />
+                    <span>C & C++</span>
+                </div>
+                <div class="skill">
+                    <img src="https://img.icons8.com/?size=100&id=12592&format=png&color=228BE6" width="40px" />
+                    <span>Python</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Portfolio Website</h3>
+                    <p>A modern and responsive portfolio built with HTML & CSS.</p>
+                </div>
+                <div class="project">
+                    <h3>Basic Calculator</h3>
+                    <p>A Simple web calculator using JavaScript.</p>
+                </div>
+                <!-- Add more projects -->
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <p><i class="fa-solid fa-envelope"></i> Email: kumarikajal11221gmail.com</p>
+            <p><i class="fa-brands fa-github"></i> GitHub: <a href="https://github.com/kajal883" target="_blank">github.com/kajal</a></p>
+            <p><i class="fa-brands fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/kajal-kumari-01022a359"
+                    target="_blank">linkedin.com/in/kajal</a></p>
+            <p> <i class="fa-solid fa-phone"></i> Phone: +91 8102196744</p>        
+        </section>
+
+        <footer>
+            <p>© Kajalsportfolio.com | All rights reserverd</p>
+        </footer>
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <!-- Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['3rd Year B.Tech Student', 'Web Development Learner'],
+                typeSpeed: 50,
+            });
+        </script>
+</body>
+
+</html>
